@@ -1,8 +1,8 @@
 FROM cm2network/steamcmd:root
 LABEL maintainer="thijs@loef.dev"
 
-ENV http_proxy=http://192.168.81.232:7890
-ENV https_proxy=http://192.168.81.232:7890
+ENV HTTP_PROXY=http://192.168.81.232:7890
+ENV HTTPS_PROXY=http://192.168.81.232:7890
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     xdg-user-dirs=0.17-2 \
